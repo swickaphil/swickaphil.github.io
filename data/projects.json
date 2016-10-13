@@ -1,0 +1,64 @@
+{
+  "projects":[
+    {
+      "title":"Marcom Email Pattern Library",
+      "subtitle":"",
+      "links":["http://marcomstage.com/team/AC56267/marcom-email-guide/"],
+      "thumb":"./img/02.jpg",
+      "images":[],
+      "summary":"A pattern library created for the simple assembly of company branded emails.  Emails are assembled by populating a foundational template with modular components in order to be assembled rather than coding each time from scratch.  Assembly system is used to create emails in .msg format which is then attached and sent to employers and/or brokers in order to send from internal ESP's.  Code snippets are pulled from a custom, external API and are hosted in a central repository, which is generated and updated independently from the front-end.",
+      "roles":["Product Management", "Technical Direction", "Art Direction", "Architecture", "User Experience", "Back-End Development"],
+      "tech":["HTML", "CSS", "JavaScript", "jQuery", "Ajax", "Node.js", "Express", "Gulp", "Handlebars", "Amazon Web Services (Elastic Beanstalk, S3, RDS, Route 53)"]
+    },
+    {
+      "title":"BGA Peachtree Road Race Expo Contest",
+      "subtitle":"",
+      "links":["https://marcomstage.com/team/AC60359/1582031/"],
+      "thumb":"./img/03.jpg",
+      "images":[],
+      "summary":"A lead generation contest created for the Peachtree Road Race Expo where applicants submit contact information and preferences in order to win a drawing for the following year's road race.  The applicant's info was submitted to a database at the time of submission which was only accessible during the open hours of the expo.  One applicant was drawn at random at the top of each open hour of the expo, and applicants were notified immediately depending on their preference (email or text).  The dashboard referenced above was for administrators of the contest to monitor applicants and winners in realtime.  NOTE: The information being utilized on the dashboard is mock data in order to protect applicant's private information.  Form and notification email in attachments.",
+      "roles":["Product Management", "Technical Direction", "Art Direction", "Architecture", "User Experience", "Back-End Development", "Front-End Development"],
+      "tech":["HTML", "CSS", "JavaScript", "jQuery", "Ajax", "Bootstrap", "Node.js", "Express", "Gulp", "Twilio", "Mailgun", "Amazon Web Services (Elastic Beanstalk, S3, RDS, Route 53)", "Socket.io"]
+    },
+    {
+      "title":"Standard Anthem Video Pages",
+      "subtitle":"",
+      "links":["https://www.anthem.com/ca/video_player/player.html?bctid=5042090896001"],
+      "thumb":"./img/04.jpg",
+      "images":[],
+      "summary":"Video pages used to display external marketing videos.  Capable of displaying 7 different brands based solely on the bctid parameter in the url.  The page reads the bctid parameter in the url and calls the Brightcove API in order to retrieve the video according to the user's connection and device, and returns metadata about the video to be displayed on the screen (logo, header and legal info).",
+      "roles":["Product Management", "Technical Direction", "Art Direction", "Architecture", "User Experience", "Front-End Development"],
+      "tech":["HTML", "CSS", "JavaScript", "Brightcove"]
+    },
+    {
+      "title":"Member Experience Microsite Framework",
+      "subtitle":"",
+      "links":["https://www.anthem.com/mx/kehp/everyday.html?content=profile_individual_bob", "https://www.anthem.com/mx/kehp/everyday.html?content=profile_couple_mikeAndSara", "https://www.anthem.com/mx/kehp/everyday.html?content=profile_family_theGreens"],
+      "thumb":"./img/02.jpg",
+      "images":[],
+      "summary":"A microsite framework engineered for replication purposes in order to customize for pre-sale use.  The 3 scenarios provided included single, couple, and family scenarios that have unique assets and resources displayed to the user depending on their preference.  Various resources customized to the client such as executive summary and company contacts are also flexible within the framework.",
+      "roles":["Product Management", "Technical Direction", "Architecture", "User Experience", "Client Relations", "Front-End Development"],
+      "tech":["HTML", "CSS", "JavaScript", "jQuery", "Ajax"]
+    },
+    {
+      "title":"Snack Cycle",
+      "subtitle":"",
+      "links":[],
+      "thumb":"./img/03.jpg",
+      "images":[],
+      "summary":"An iPad game used to generate leads for sales conventions.  Users are required to submit email information in order to participate, and winners with top scores received a prize.  The objective is to jump (tap) and duck (tap + hold) in order to collect healthy food and avoid unhealthy food.  An energy meter is shown, which diminishes over the duration of the game.  In order to keep their energy up throughout the game, the user collects healthy food, which increases the energy meter.  Subsequently, if unhealthy food is gathered, the player's energy depletes faster.  Once the player advances to the next level (3 total), healthy tips periodically display on screen.",
+      "roles":["Product Management", "Technical Direction", "Art Direction", "Architecture", "User Experience", "Front-End Development", "Client Relations"],
+      "tech":["HTML5", "JavaScript", "CreateJS", "PhoneGap/Cordova", "Flash (asset creation)"]
+    },
+    {
+      "title":"Joy-Duino",
+      "subtitle":"",
+      "links":[],
+      "thumb":"./img/04.jpg",
+      "images":[],
+      "summary":"",
+      "roles":["Design", "Development"],
+      "tech":["Arduino"]
+    }
+  ]
+}
