@@ -38,6 +38,14 @@
   cursor: pointer;
 }
 
+.project-overlay {
+  background-color: #000;
+}
+
+.thumb {
+  max-width: 600px;
+}
+
 .form-group label{
   color: #999;
 }
@@ -287,19 +295,7 @@ a[rel="modal:close"] {
 }
 
 #bg-home {
-  background: url(../img/01.jpg) no-repeat bottom center fixed; 
-}
-
-#bg-leadership {
-  background: url(../img/02.jpg) no-repeat center center fixed; 
-}
-
-#bg-technology {
-  background: url(../img/03.jpg) no-repeat center center fixed; 
-}
-
-#bg-design {
-  background: url(../img/04.jpg) no-repeat center center fixed; 
+  background: url(../assets/01.jpg) no-repeat bottom center fixed; 
 }
 
 .footer {
