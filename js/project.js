@@ -4,44 +4,47 @@ $( document ).ready(function() {
   var paramsString = decodeURIComponent(window.location.search).replace("?details=", "")
   var projectDetailsObj = JSON.parse(paramsString);
   
-  console.log(projectDetailsObj);
+  console.log(projectDetailsObj.thumb);
 
-  $(".title").text(projectDetailsObj.title)
+  $("#details-title .title").text(projectDetailsObj.title)
   
-  // $(".thumb").attr("src", projectDetailsObj.thumb)
+  /*$("#details-carousel").append(
+    '<div class="col-md-6 col-md-offset-3">'
+      + '<img src="' + projectDetailsObj.thumb + '" class="img-responsive center-block" alt="project image">'
+    + '</div>'
+  )*/
 
-  /*for (var i = 0; i < projectDetailsObj.images.length; i++) {
-    $(".carousel-indicators").append('<li data-target="#carousel-example-generic" data-slide-to="' + i + '" class="active"></li>');
+  for (var i = 0; i < projectDetailsObj.images.length; i++) {
+    // $(".carousel-indicators").append('<li data-target="#carousel-example-generic" data-slide-to="' + i + '" class="active"></li>');
     
     var imgHTML = '';
 
     if (i == 0) {
       imgHTML = '<div class="item active">'
-              + '<img src="' + projectDetailsObj.images[i] + '" alt="...">'
-              + '<div class="carousel-caption">'
-              +  '...'
-              + '</div>'
-            '</div>'
+        + '<div class="col-md-6 col-md-offset-3">'
+          + '<img src="' + projectDetailsObj.images[i] + '" class="img-responsive" alt="project image">'
+        + '</div>'
+        + '<div class="carousel-caption">'
+        +  '...'
+        + '</div>'
+      + '</div>';
+      if(projectDetailsObj.images.length > 1){
+        $(".carousel-indicators").append('<li data-target="#carousel-project" data-slide-to="' + i + '" class="active"></li>');
+      }else{
+        $(".carousel-controls").css('visibility','hidden');
+      }
     }else{
-      imgHTML + '<div class="item">'
-              + '<img src="..." alt="...">'
-              + '<div class="carousel-caption">'
-              +  '...'
-              + '</div>'
-            '</div>'
+      imgHTML = '<div class="item">'
+        + '<div class="col-md-6 col-md-offset-3">'
+          + '<img src="' + projectDetailsObj.images[i] + '" class="img-responsive" alt="project image">'
+        + '</div>'
+        + '<div class="carousel-caption">'
+        +  '...'
+        + '</div>'
+      + '</div>';
+      $(".carousel-indicators").append('<li data-target="#carousel-project" data-slide-to="' + i + '"></li>');
     }
-    
     $(".carousel-inner").append(imgHTML);
-
-  }*/
-
-
-
-  for (var i = 0; i < projectDetailsObj.links.length; i++) {
-    $(".links").append("<a href='" + projectDetailsObj.links[i] + "'>LINK</a>");
-    if (i != projectDetailsObj.links.length - 1) {
-      $(".links").append(", ");
-    }
   }
 
   $(".summary").text(projectDetailsObj.summary)
@@ -56,6 +59,15 @@ $( document ).ready(function() {
     $(".tech").append(projectDetailsObj.tech[i]);
     if (i != projectDetailsObj.tech.length - 1) {
       $(".tech").append(", ");
+    }
+  }
+
+  if(projectDetailsObj.links.length > 0){
+    for (var i = 0; i < projectDetailsObj.links.length; i++) {
+      $(".links").append("<a href='" + projectDetailsObj.links[i].url + "' target='_blank'>" + projectDetailsObj.links[i].caption + "</a><br>");
+      /*if (i != projectDetailsObj.links.length - 1) {
+        $(".links").append("<br>");
+      }*/
     }
   }
 });

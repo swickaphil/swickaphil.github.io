@@ -42,6 +42,31 @@
   background-color: #000;
 }
 
+.carousel-controls {
+  text-align: center;
+  padding-top: 0px;
+}
+.carousel-controls a{
+  text-decoration: none;
+  margin: 0px 30px;
+  display: inline-block;
+  z-index: 20;
+}
+
+.carousel-indicators{
+  padding-bottom: 30px;
+  top: -20px;
+  bottom: inherit;
+}
+
+.carousel-indicators li{
+  border: 1px solid #337ab7;
+}
+
+.carousel-indicators .active {
+  background-color: #337ab7;
+}
+
 .thumb {
   max-width: 600px;
 }
@@ -164,8 +189,8 @@
 .form-icon {
   color:#FF5800;
   position: absolute;
-  margin-top: 30px;
-  margin-left: -25px;
+  margin-top: 31px;
+  margin-left: -30px;
   visibility: hidden;
 }
 

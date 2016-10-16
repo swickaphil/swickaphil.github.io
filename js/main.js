@@ -45,13 +45,14 @@ $( document ).ready(function() {
   // FORM //
 
   $("#form-btn-send").on("click", function(e){
-    var name = $("#form-name").val();
+    var nameFirst = $("#form-first-name").val();
+    var nameLast = $("#form-last-name").val();
     var email = $("#form-email").val();
     var msg = $("#form-message").val();
     var gotcha = $("#form-gotcha").val();
     
     // Test Form
-    var testName = testForm("name", name);
+    var testFirstName = testForm("name", nameFirst);
     var testEmail = testForm("email", email);
     var testMsg = testForm("msg", msg);
 
@@ -61,9 +62,10 @@ $( document ).ready(function() {
 
     $(".form-icon").css('visibility', 'hidden');
 
-    console.log(testName, testEmail, testMsg);
+    console.log(testFirstName, testEmail, testMsg);
 
-    if(testName && testEmail && testMsg){
+    if(testFirstName && testEmail && testMsg){
+      var name = nameFirst + " " + nameLast;
       var subject = "Email submission from " + name;
       $.ajax({
         url: "https://formspree.io/paswicka@gmail.com", 
@@ -72,8 +74,7 @@ $( document ).ready(function() {
           message: msg,
           email: email,
           name: name,
-          _subject: subject,
-          next: ""
+          _subject: subject
         },
         dataType: "json",
         error: function(err){
@@ -84,7 +85,7 @@ $( document ).ready(function() {
         }
       });
     }else{
-      if (!testName) {
+      if (!testFirstName) {
         $("#form-icon-name").css('visibility', 'visible')
       }
       if (!testEmail) {
@@ -99,7 +100,7 @@ $( document ).ready(function() {
   function testForm(type, val){
     var result = true;
 
-    if (val.length < 1) {
+    if (!val || val.length < 1) {
       result = false;
     }
 
