@@ -2,7 +2,7 @@
   "projects":[
     {
       "title":"Marcom Email Pattern Library",
-      "subtitle":"",
+      "subtitle":"Pattern library created for the simple assembly of company branded emails.",
       "links":[
         {
           "url":"http://marcomstage.com/team/AC56267/marcom-email-guide/",
@@ -17,7 +17,7 @@
     },
     {
       "title":"Peachtree Road Race Contest",
-      "subtitle":"",
+      "subtitle":"Lead generation contest created for the Peachtree Road Race Expo.",
       "links":[
         {
           "url":"https://marcomstage.com/team/AC60359/1582031/",
@@ -31,8 +31,23 @@
       "tech":["HTML", "CSS", "JavaScript", "jQuery", "Ajax", "Bootstrap", "Node.js", "Express", "Gulp", "Twilio", "Mailgun", "Amazon Web Services (Elastic Beanstalk, S3, RDS, Route 53)", "Socket.io"]
     },
     {
+      "title":"Marcom Sizzle Reel",
+      "subtitle":"In-house marketing department sizzle reel.",
+      "links":[
+        {
+          "url":"http://players.brightcove.net/3639471564001/S1K1jbPV_default/index.html?videoId=4356423794001",
+          "caption":"VIDEO"
+        }
+      ],
+      "thumb":"./assets/project-sizzle-01.png",
+      "images":["./assets/project-sizzle-01.png"],
+      "summary":"A quickly assembled sizzle reel in order to showcase department accomplishments to executive management for mid year review.",
+      "roles":["Project Manager", "Designer", "Editor", "Animator"],
+      "tech":["Adobe Premiere", "Adobe AfterEffects", "Adobe Photoshop", "Adobe Illustrator", "Brightcove"]
+    },
+    {
       "title":"Joy-Duino",
-      "subtitle":"",
+      "subtitle":"Arduino powered WS280 LEDs displaying the word JOY.",
       "links":[
         {
           "url":"https://youtu.be/CDU0x9hLQAA",
@@ -41,13 +56,28 @@
       ],
       "thumb":"./assets/project-03-01.jpg",
       "images":["./assets/project-03-01.jpg", "./assets/project-03-02.jpg", "./assets/project-03-03.jpg"],
-      "summary":"",
-      "roles":["Design", "Development"],
-      "tech":["Arduino"]
+      "summary":"Arduino powered WS280 LEDs displaying the word JOY.",
+      "roles":["Concept", "Design", "Development"],
+      "tech":["Arduino", "LED Lights"]
+    },
+    {
+      "title":"Contact-O-Matic",
+      "subtitle":"A simple address book app using Angular.",
+      "links":[
+        {
+          "url":"https://github.com/swickaphil/contact-o-matic",
+          "caption":"REPO"
+        }
+      ],
+      "thumb":"./assets/project-contact-01.jpg",
+      "images":["./assets/project-contact-01.jpg"],
+      "summary":"A simple address book app using Angular.",
+      "roles":["Architecture", "User Experience", "Front-End Development"],
+      "tech":["HTML", "CSS", "Angular", "Bootstrap", "Ajax"]
     },
     {
       "title":"Standard Anthem Video Pages",
-      "subtitle":"",
+      "subtitle":"Universal landing pages used to display external marketing videos.",
       "links":[
         {
           "url":"https://www.anthem.com/ca/video_player/player.html?bctid=5042090896001",
@@ -56,13 +86,13 @@
       ],
       "thumb":"./assets/project-04-01.jpg",
       "images":["./assets/project-04-01.jpg"],
-      "summary":"Video pages used to display external marketing videos.  Capable of displaying 7 different brands based solely on the bctid parameter in the url.  The page reads the bctid parameter in the url and calls the Brightcove API in order to retrieve the video according to the user's connection and device, and returns metadata about the video to be displayed on the screen (logo, header and legal info).",
+      "summary":"Universal landing pages used to display external marketing videos.  Capable of displaying 7 different brands based solely on the bctid parameter in the url.  The page reads the bctid parameter in the url and calls the Brightcove API in order to retrieve the video according to the user's connection and device, and returns metadata about the video to be displayed on the screen (logo, header and legal info).",
       "roles":["Product Management", "Technical Direction", "Art Direction", "Architecture", "User Experience", "Front-End Development"],
       "tech":["HTML", "CSS", "JavaScript", "Brightcove"]
     },
     {
       "title":"Snack Cycle",
-      "subtitle":"",
+      "subtitle":"iPad game used to generate leads for sales conventions.",
       "links":[],
       "thumb":"./assets/project-05-01.PNG",
       "images":["./assets/project-05-01.PNG", "./assets/project-05-02.PNG", "./assets/project-05-03.PNG", "./assets/project-05-04.PNG", "./assets/project-05-12.PNG", "./assets/project-05-13.PNG"],
@@ -72,7 +102,7 @@
     },
     {
       "title":"Member Experience Framework",
-      "subtitle":"",
+      "subtitle":"Microsite framework engineered for pre-sale replication and customization.",
       "links":[
         {
           "url":"https://www.anthem.com/mx/kehp/everyday.html?content=profile_individual_bob",

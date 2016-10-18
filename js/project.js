@@ -64,10 +64,7 @@ $( document ).ready(function() {
 
   if(projectDetailsObj.links.length > 0){
     for (var i = 0; i < projectDetailsObj.links.length; i++) {
-      $(".links").append("<a href='" + projectDetailsObj.links[i].url + "' target='_blank'>" + projectDetailsObj.links[i].caption + "</a><br>");
-      /*if (i != projectDetailsObj.links.length - 1) {
-        $(".links").append("<br>");
-      }*/
+      $(".links").append("<a href='" + projectDetailsObj.links[i].url + "' target='_blank'>" + projectDetailsObj.links[i].caption + "</a>");
     }
   }
 });
