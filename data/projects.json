@@ -2,16 +2,16 @@
   "projects":[
     {
       "title":"Marcom Email Pattern Library",
-      "subtitle":"Pattern library created for the simple assembly of company branded emails.",
+      "subtitle":"Pattern library created for the simple assembly of responsive, company branded emails.",
       "links":[
         {
           "url":"http://marcomstage.com/team/AC56267/marcom-email-guide/",
           "caption":"PATTERN LIBRARY"
         }
       ],
-      "thumb":"./assets/project-01-01.jpg",
-      "images":["./assets/project-01-01.jpg"],
-      "summary":"A pattern library created for the simple assembly of company branded emails.  Emails are assembled by populating a foundational template with modular components in order to be assembled rather than coding each time from scratch.  Assembly system is used to create emails in .msg format which is then attached and sent to employers and/or brokers in order to send from internal ESP's.  Code snippets are pulled from a custom, external API and are hosted in a central repository, which is generated and updated independently from the front-end.",
+      "thumb":"./assets/project-email-01.jpg",
+      "images":["./assets/project-email-01.jpg","./assets/project-email-04.jpg","./assets/project-email-05.jpg","./assets/project-email-06.jpg"],
+      "summary":"A pattern library created for the simple assembly of responsive, company branded emails.  Emails are assembled by populating a foundational template with modular components in order to be assembled rather than coding each time from scratch.  Assembly system is used to create emails in .msg format which is then attached and sent to employers and/or brokers in order to send from internal ESP's.  Code snippets are pulled from a custom, external API and are hosted in a central repository, which is generated and updated independently from the front-end.",
       "roles":["Product Management", "Technical Direction", "Art Direction", "Architecture", "User Experience", "Back-End Development"],
       "tech":["HTML", "CSS", "JavaScript", "jQuery", "Ajax", "Node.js", "Express", "Gulp", "Handlebars", "Amazon Web Services (Elastic Beanstalk, S3, RDS, Route 53)"]
     },
@@ -61,21 +61,6 @@
       "tech":["Arduino", "LED Lights"]
     },
     {
-      "title":"Contact-O-Matic",
-      "subtitle":"A simple address book app using Angular.",
-      "links":[
-        {
-          "url":"https://github.com/swickaphil/contact-o-matic",
-          "caption":"REPO"
-        }
-      ],
-      "thumb":"./assets/project-contact-01.jpg",
-      "images":["./assets/project-contact-01.jpg"],
-      "summary":"A simple address book app using Angular.",
-      "roles":["Architecture", "User Experience", "Front-End Development"],
-      "tech":["HTML", "CSS", "Angular", "Bootstrap", "Ajax"]
-    },
-    {
       "title":"Standard Anthem Video Pages",
       "subtitle":"Universal landing pages used to display external marketing videos.",
       "links":[
@@ -122,6 +107,22 @@
       "summary":"A microsite framework engineered for replication purposes in order to customize for pre-sale use.  The 3 scenarios provided included single, couple, and family scenarios that have unique assets and resources displayed to the user depending on their preference.  Various resources customized to the client such as executive summary and company contacts are also flexible within the framework.",
       "roles":["Product Management", "Technical Direction", "Architecture", "User Experience", "Client Relations", "Front-End Development"],
       "tech":["HTML", "CSS", "JavaScript", "jQuery", "Ajax"]
+    }
+    ,
+    {
+      "title":"M-GO Movies + TV",
+      "subtitle":"Mobile streaming video service featured on a full spectrum of devices and operating systems.",
+      "links":[
+        {
+          "url":"https://www.youtube.com/watch?v=wVzxHzqxhYs",
+          "caption":"DEMO"
+        }
+      ],
+      "thumb":"./assets/project-mgo-01.jpg",
+      "images":["./assets/project-mgo-05.jpg", "./assets/project-mgo-03.jpg", "./assets/project-mgo-04.png", "./assets/project-mgo-02.jpg"],
+      "summary":"M-GO was a joint venture between DreamWorks Animation and Technicolor.  It was available on major platforms and functions on a full spectrum of operating systems ranging from Android to iOS to Windows. M-GO is pre-loaded on Samsung’s Smart TV’s, Blu-ray players and Wi-Fi tablets, LG Smart TVs and Blu-ray players, VIZIO’s Smart TVs, Blu-ray players, Wi-Fi tablets and digital media players, and Roku streaming players.  </p><p>In my role during the incubation period of M-GO as a startup, I primarily developed AS3 software and applications to be featured within the core UI framework for tablets and phones.  I continuously worked in conjunction with Product Owners, UX Designers, Front-End and Back-End Developers, and QA in an Agile work environment in order to have direct ownership of the product's evolution.  The software I contributed was featured at the Technicolor booth at the Consumer Electronics Show (CES) in Las Vegas in 2010, 2011 and 2012.",
+      "roles":["Software Developer"],
+      "tech":["Flash", "Actionscript 3.0", "REST", "JSON", "XML"]
     }
   ]
 }

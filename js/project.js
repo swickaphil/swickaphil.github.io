@@ -47,7 +47,7 @@ $( document ).ready(function() {
     $(".carousel-inner").append(imgHTML);
   }
 
-  $(".summary").text(projectDetailsObj.summary)
+  $(".summary").html(projectDetailsObj.summary)
   for (var i = 0; i < projectDetailsObj.roles.length; i++) {
     $(".roles").append(projectDetailsObj.roles[i]);
     if (i != projectDetailsObj.roles.length - 1) {
@@ -65,6 +65,9 @@ $( document ).ready(function() {
   if(projectDetailsObj.links.length > 0){
     for (var i = 0; i < projectDetailsObj.links.length; i++) {
       $(".links").append("<a href='" + projectDetailsObj.links[i].url + "' target='_blank'>" + projectDetailsObj.links[i].caption + "</a>");
+      if (i != projectDetailsObj.links.length - 1) {
+      $(".links").append(", ");
+    }
     }
   }
 });
