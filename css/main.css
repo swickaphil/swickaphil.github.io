@@ -49,6 +49,10 @@ a {
   width: 100%;
 }
 
+.project-hover img {
+  outline-width: 2px;
+}
+
 .project-hover h4 {
   text-decoration: underline;
 }
@@ -135,6 +139,16 @@ a .fa {
   .titleEmph {
     font-size: 28px;
   }
+
+  /*.section-bg {
+    -webkit-background-size: 100% !important; 
+    -moz-background-size: 100% !important; 
+    -o-background-size: 100% !important; 
+    background-size: 100% !important;
+  }
+  #bg-home {
+    background: url(../assets/01.jpg) no-repeat top center fixed;
+  }*/
 }
 
 .row-about,
@@ -227,10 +241,6 @@ a .fa {
   display: table;
   height: 600px;
   position: relative;
-  -webkit-background-size: 100%; 
-  -moz-background-size: 100%; 
-  -o-background-size: 100%; 
-  background-size: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
