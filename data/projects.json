@@ -40,7 +40,7 @@
         }
       ],
       "thumb":"./assets/project-sizzle-01.png",
-      "images":["./assets/project-sizzle-01.png"],
+      "images":["./assets/project-sizzle-01.png", "./assets/project-sizzle-02.jpg", "./assets/project-sizzle-03.jpg", "./assets/project-sizzle-04.jpg", "./assets/project-sizzle-05.jpg", "./assets/project-sizzle-06.jpg"],
       "summary":"A quickly assembled sizzle reel in order to showcase department accomplishments to executive management for mid year review.",
       "roles":["Project Manager", "Designer", "Editor", "Animator"],
       "tech":["Adobe Premiere", "Adobe AfterEffects", "Adobe Photoshop", "Adobe Illustrator", "Brightcove"]
@@ -66,11 +66,19 @@
       "links":[
         {
           "url":"https://www.anthem.com/ca/video_player/player.html?bctid=5042090896001",
-          "caption":"LINK"
+          "caption":"VIDEO 1"
+        },
+        {
+          "url":"https://www.empireblue.com/video_player/player.html?bctid=4652025790001",
+          "caption":"VIDEO 2"
+        },
+        {
+          "url":"https://www11.anthem.com/ca/video_player/player.html?bctid=4494376976001",
+          "caption":"VIDEO 3"
         }
       ],
-      "thumb":"./assets/project-04-01.jpg",
-      "images":["./assets/project-04-01.jpg"],
+      "thumb":"./assets/project-videoPlayer-01.jpg",
+      "images":["./assets/project-videoPlayer-01.jpg", "./assets/project-videoPlayer-02.jpg", "./assets/project-videoPlayer-03.jpg"],
       "summary":"Universal landing pages used to display external marketing videos.  Capable of displaying 7 different brands based solely on the bctid parameter in the url.  The page reads the bctid parameter in the url and calls the Brightcove API in order to retrieve the video according to the user's connection and device, and returns metadata about the video to be displayed on the screen (logo, header and legal info).",
       "roles":["Product Management", "Technical Direction", "Art Direction", "Architecture", "User Experience", "Front-End Development"],
       "tech":["HTML", "CSS", "JavaScript", "Brightcove"]
@@ -102,8 +110,8 @@
           "caption":"SCENARIO, FAMILY"
         }
       ],
-      "thumb":"./assets/project-06-01.jpg",
-      "images":["./assets/project-06-01.jpg"],
+      "thumb":"./assets/project-mx-01.jpg",
+      "images":["./assets/project-mx-01.jpg", "./assets/project-mx-02.jpg", "./assets/project-mx-03.jpg"],
       "summary":"A microsite framework engineered for replication purposes in order to customize for pre-sale use.  The 3 scenarios provided included single, couple, and family scenarios that have unique assets and resources displayed to the user depending on their preference.  Various resources customized to the client such as executive summary and company contacts are also flexible within the framework.",
       "roles":["Product Management", "Technical Direction", "Architecture", "User Experience", "Client Relations", "Front-End Development"],
       "tech":["HTML", "CSS", "JavaScript", "jQuery", "Ajax"]
