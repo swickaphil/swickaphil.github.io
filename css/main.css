@@ -26,6 +26,10 @@
   font-weight: 200;
 }
 
+a {
+  color: #777;
+}
+
 .section-container{
   padding-bottom: 20px;
 }
@@ -38,8 +42,15 @@
   cursor: pointer;
 }
 
-.project-overlay {
-  background-color: #000;
+.project img {
+  outline-style: solid;
+  outline-color: #ccc;
+  outline-width: 1px;
+  width: 100%;
+}
+
+.project-hover h4 {
+  text-decoration: underline;
 }
 
 .carousel-controls {
@@ -60,11 +71,15 @@
 }
 
 .carousel-indicators li{
-  border: 1px solid #337ab7;
+  border: 1px solid #777;
 }
 
 .carousel-indicators .active {
-  background-color: #337ab7;
+  background-color: #777;
+}
+
+a .fa {
+  color: #777;
 }
 
 .thumb {
@@ -194,16 +209,16 @@
   visibility: hidden;
 }
 
-.social-icon,
-.social-icon:visited {
+.external-link,
+.external-link:visited {
   padding: 5px;
   color: #777;
   cursor: pointer;
 }
 
-.social-icon:hover,
-.social-icon:active
- {
+.external-link:hover,
+.external-link:active
+{
   color: #555;
 }
 
@@ -212,6 +227,10 @@
   display: table;
   height: 600px;
   position: relative;
+  -webkit-background-size: 100%; 
+  -moz-background-size: 100%; 
+  -o-background-size: 100%; 
+  background-size: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -320,7 +339,7 @@ a[rel="modal:close"] {
 }
 
 #bg-home {
-  background: url(../assets/01.jpg) no-repeat bottom center fixed; 
+  background: url(../assets/01.jpg) no-repeat bottom center fixed;
 }
 
 .footer {

@@ -10,20 +10,17 @@ $( document ).ready(function() {
     dataType: 'json',
     success: function(data) {
       projectList = data.projects;
-      console.log(projectList);
-      console.log(projectList.length);
       var injectString = '';
       if (projectList && projectList.length > 0){
 
         for (var i = 0; i < projectList.length; i++) {
-          console.log(i % 4);
           if (i % 4 == 0) {
             injectString += '<div class="row row-projects">'
           }
           injectString += '<div id="' + i + '" class="col-md-3 project">'
           + '<div class="img-responsive project-overlay">'
           + '</div>'
-          + '<img src="' + projectList[i].thumb + '" class="img-responsive thumbnail" alt="' + projectList[i].title + ' project">'
+          + '<img src="' + projectList[i].thumb + '" class="img-responsive" alt="' + projectList[i].title + ' project">'
           + '<h4>' + projectList[i].title + '</h4>'
           + '<p>' + projectList[i].subtitle + '</p>'
           + '</div>';
@@ -34,11 +31,17 @@ $( document ).ready(function() {
               injectString += "<div class='btn-container'><a href='#connect' class='btn btn-default btn-lg btn-connect'>Let's Connect</a></div>";
             }
           }
-
         }
+
         $('.container-projects').append(injectString);
 
         $(".project").on("click", projectClick);
+
+        $(".project").hover(function(e){
+          $(e.currentTarget).addClass("project-hover");
+        }, function(e){
+          $(e.currentTarget).removeClass("project-hover");
+        });
       }
     }               
   });

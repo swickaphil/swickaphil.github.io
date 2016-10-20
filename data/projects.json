@@ -26,7 +26,7 @@
       ],
       "thumb":"./assets/project-02-01.jpg",
       "images":["./assets/project-02-01.jpg", "./assets/project-02-02.jpg", "./assets/project-02-03.jpg", "./assets/project-02-04.jpg"],
-      "summary":"A lead generation contest created for the Peachtree Road Race Expo where applicants submit contact information and preferences in order to win a drawing for the following year's road race.  The applicant's info was submitted to a database at the time of submission which was only accessible during the open hours of the expo.  One applicant was drawn at random at the top of each open hour of the expo, and applicants were notified immediately depending on their preference (email or text).  The dashboard referenced above was for administrators of the contest to monitor applicants and winners in realtime.  NOTE: The information being utilized on the dashboard is mock data in order to protect applicant's private information.  Form and notification email in attachments.",
+      "summary":"A lead generation contest created for the Peachtree Road Race Expo where applicants submit contact information and preferences in order to win a drawing for the following year's road race.  The applicant's info was submitted to a database at the time of submission which was only accessible during the open hours of the expo.  One applicant was drawn at random at the top of each open hour of the expo, and applicants were notified immediately depending on their preference (email or text).  The dashboard referenced above was for administrators of the contest to monitor applicants and winners in realtime.</p><p>NOTE: The information being utilized on the dashboard is mock data in order to protect applicant's private information.  Form and notification email in attachments.",
       "roles":["Product Management", "Technical Direction", "Art Direction", "Architecture", "User Experience", "Back-End Development", "Front-End Development"],
       "tech":["HTML", "CSS", "JavaScript", "jQuery", "Ajax", "Bootstrap", "Node.js", "Express", "Gulp", "Twilio", "Mailgun", "Amazon Web Services (Elastic Beanstalk, S3, RDS, Route 53)", "Socket.io"]
     },
@@ -47,7 +47,7 @@
     },
     {
       "title":"Joy-Duino",
-      "subtitle":"Arduino powered WS280 LEDs displaying the word JOY.",
+      "subtitle":"Arduino Uno powering and animating WS280 LEDs displaying the word JOY.",
       "links":[
         {
           "url":"https://youtu.be/CDU0x9hLQAA",
@@ -56,7 +56,7 @@
       ],
       "thumb":"./assets/project-03-01.jpg",
       "images":["./assets/project-03-01.jpg", "./assets/project-03-02.jpg", "./assets/project-03-03.jpg"],
-      "summary":"Arduino powered WS280 LEDs displaying the word JOY.",
+      "summary":"Arduino Uno powering and animating WS280 LEDs displaying the word JOY.",
       "roles":["Concept", "Design", "Development"],
       "tech":["Arduino", "LED Lights"]
     },
