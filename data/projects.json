@@ -1,21 +1,6 @@
 {
   "projects":[
     {
-      "title":"Marcom Email Pattern Library",
-      "subtitle":"Pattern library created for the simple assembly of responsive, company branded emails.",
-      "links":[
-        {
-          "url":"http://marcomstage.com/team/AC56267/marcom-email-guide/",
-          "caption":"PATTERN LIBRARY"
-        }
-      ],
-      "thumb":"./assets/project-email-01.jpg",
-      "images":["./assets/project-email-01.jpg","./assets/project-email-04.jpg","./assets/project-email-05.jpg","./assets/project-email-06.jpg"],
-      "summary":"A pattern library created for the simple assembly of responsive, company branded emails.  Emails are assembled by populating a foundational template with modular components in order to be assembled rather than coding each time from scratch.  Assembly system is used to create emails in .msg format which is then attached and sent to employers and/or brokers in order to send from internal ESP's.  Code snippets are pulled from a custom, external API and are hosted in a central repository, which is generated and updated independently from the front-end.",
-      "roles":["Product Management", "Technical Direction", "Art Direction", "Architecture", "User Experience", "Back-End Development"],
-      "tech":["HTML", "CSS", "JavaScript", "jQuery", "Ajax", "Node.js", "Express", "Gulp", "Handlebars", "Amazon Web Services (Elastic Beanstalk, S3, RDS, Route 53)"]
-    },
-    {
       "title":"Peachtree Road Race Contest",
       "subtitle":"Lead generation contest created for the Peachtree Road Race Expo.",
       "links":[
@@ -31,6 +16,66 @@
       "tech":["HTML", "CSS", "JavaScript", "jQuery", "Ajax", "Bootstrap", "Node.js", "Express", "Gulp", "Twilio", "Mailgun", "Amazon Web Services (Elastic Beanstalk, S3, RDS, Route 53)", "Socket.io"]
     },
     {
+      "title":"Email Pattern Library",
+      "subtitle":"Front-end pattern library created for the simple assembly of responsive, company branded emails.",
+      "links":[
+        {
+          "url":"http://marcomstage.com/team/AC56267/marcom-email-guide/",
+          "caption":"PATTERN LIBRARY"
+        }
+      ],
+      "thumb":"./assets/project-email-02.jpg",
+      "images":["./assets/project-email-02.jpg","./assets/project-email-01.jpg","./assets/project-email-04.jpg","./assets/project-email-05.jpg","./assets/project-email-06.jpg"],
+      "summary":"A front-end pattern library created for the simple assembly of responsive, company branded emails.  Emails are assembled by populating a foundational template with modular components in order to be assembled rather than coding each time from scratch.  Assembly system is used to create emails in .msg format which is then attached and sent to employers and/or brokers in order to send from internal ESP's.  Code snippets are pulled from a custom, external API and are hosted in a central repository, which is generated and updated independently from the front-end.",
+      "roles":["Product Management", "Technical Direction", "Art Direction", "Architecture", "User Experience", "Back-End Development"],
+      "tech":["HTML", "CSS", "JavaScript", "jQuery", "Ajax", "Node.js", "Express", "Gulp", "Handlebars", "Amazon Web Services (Elastic Beanstalk, S3, RDS, Route 53)"]
+    },
+    {
+      "title":"Joy-Duino",
+      "subtitle":"Animated LEDs displaying the word JOY powered by an Arduino Uno.",
+      "links":[
+        {
+          "url":"https://youtu.be/CDU0x9hLQAA",
+          "caption":"VIDEO"
+        },
+        {
+          "url":"https://github.com/swickaphil/joyduino-demo",
+          "caption":"CODE"
+        }
+      ],
+      "thumb":"./assets/project-joyduino-03.jpg",
+      "images":["./assets/project-joyduino-03.jpg", "./assets/project-joyduino-01.jpg", "./assets/project-joyduino-02.jpg"],
+      "summary":"A personal project in which I assembled LEDs within paper mache letters displaying the word JOY.  The LEDs were powered and animated by an Arduino Uno using the FastLED open source library.",
+      "roles":["Concept", "Design", "Development"],
+      "tech":["Arduino", "LED Lights"]
+    },
+    {
+      "title":"Innovation Studio",
+      "subtitle":"Brand identity and digital marketing material development for Anthem's internal innovation lab.",
+      "links":[
+      ],
+      "thumb":"./assets/project-innovation-04.jpg",
+      "images":["./assets/project-innovation-04.jpg", "./assets/project-innovation-03.jpg", "./assets/project-innovation-02.jpg", "./assets/project-innovation-01.jpg"],
+      "summary":"Through this project, I led a team of art directors and writers and to create the brand identity and microsite concept for Anthem's internal innovation lab.  This project shaped the visual identity of the entire studio, including the environmental design for the studio itself.",
+      "roles":["Creative Direction", "Project Management", "Client Relations"],
+      "tech":["Adobe InDesign", "Adobe Photoshop", "Adobe Illustrator"]
+    },
+    {
+      "title":"Anthem In A Box",
+      "subtitle":"A proof of concept prototype used to illustrate the potential of using augmented reality for the Welcome To Anthem experience.",
+      "links":[
+        {
+          "url":"http://players.brightcove.net/3639471564001/S1K1jbPV_default/index.html?videoId=5179068969001",
+          "caption":"DEMO"
+        }
+      ],
+      "thumb":"./assets/project-anthemInABox-01.jpg",
+      "images":["./assets/project-anthemInABox-01.jpg"],
+      "summary":"A quickly assembled proof of concept prototype used to illustrate the potential of using augmented reality for the “Welcome to Anthem” experience.  The idea is to offer an enhanced digital interaction for a new member by offering engaging visuals, communications, and resources through augmented reality in order to explain challenging concepts and direct them to register online.",
+      "roles":["Concept", "Technical Direction", "Design", "Development"],
+      "tech":["Aurasma"]
+    },
+    {
       "title":"Marcom Sizzle Reel",
       "subtitle":"In-house marketing department sizzle reel.",
       "links":[
@@ -44,21 +89,6 @@
       "summary":"A quickly assembled sizzle reel in order to showcase department accomplishments to executive management for mid year review.",
       "roles":["Project Manager", "Designer", "Editor", "Animator"],
       "tech":["Adobe Premiere", "Adobe AfterEffects", "Adobe Photoshop", "Adobe Illustrator", "Brightcove"]
-    },
-    {
-      "title":"Joy-Duino",
-      "subtitle":"Arduino Uno powering and animating WS280 LEDs displaying the word JOY.",
-      "links":[
-        {
-          "url":"https://youtu.be/CDU0x9hLQAA",
-          "caption":"VIDEO"
-        }
-      ],
-      "thumb":"./assets/project-03-01.jpg",
-      "images":["./assets/project-03-01.jpg", "./assets/project-03-02.jpg", "./assets/project-03-03.jpg"],
-      "summary":"Arduino Uno powering and animating WS280 LEDs displaying the word JOY.",
-      "roles":["Concept", "Design", "Development"],
-      "tech":["Arduino", "LED Lights"]
     },
     {
       "title":"Standard Anthem Video Pages",
@@ -103,16 +133,16 @@
         },
         {
           "url":"https://www.anthem.com/mx/kehp/everyday.html?content=profile_couple_mikeAndSara",
-          "caption":"SCENARIO, COUPLE"
+          "caption":"SCENARIO: COUPLE"
         },
         {
           "url":"https://www.anthem.com/mx/kehp/everyday.html?content=profile_family_theGreens",
-          "caption":"SCENARIO, FAMILY"
+          "caption":"SCENARIO: FAMILY"
         }
       ],
       "thumb":"./assets/project-mx-01.jpg",
       "images":["./assets/project-mx-01.jpg", "./assets/project-mx-02.jpg", "./assets/project-mx-03.jpg"],
-      "summary":"A microsite framework engineered for replication purposes in order to customize for pre-sale use.  The 3 scenarios provided included single, couple, and family scenarios that have unique assets and resources displayed to the user depending on their preference.  Various resources customized to the client such as executive summary and company contacts are also flexible within the framework.",
+      "summary":"This microsite framework was engineered for the purpose of replication and customization for use in pre-sale proposals.  The 3 scenarios provided included single, couple, and family personas that have unique assets and resources displayed to the user depending on their choice.  In addition to verbiage and links, various other resources are customizable within the framework depending on the client such as resource links, executive summary and company contacts.  The integration of simple data structures allows ability to generate and update content easily while offering an engaging user experience.",
       "roles":["Product Management", "Technical Direction", "Architecture", "User Experience", "Client Relations", "Front-End Development"],
       "tech":["HTML", "CSS", "JavaScript", "jQuery", "Ajax"]
     }
