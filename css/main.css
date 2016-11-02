@@ -47,14 +47,17 @@ a {
   outline-color: #ccc;
   outline-width: 1px;
   width: 100%;
+  margin-top: 5%;
 }
 
-.project-hover img {
-  outline-width: 2px;
-}
-
-.project-hover h4 {
-  text-decoration: underline;
+.project-overlay{
+  background: rgba(0,0,0,.4);
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 105%;
+  margin-top: -2%;
+  opacity: 0;
 }
 
 .carousel-controls {
@@ -136,27 +139,6 @@ a .fa {
   display:inline-block;
 }
 
-@media only screen and (max-width: 562px) {
-  #title-row-1,
-  #title-row-2,
-  #title-row-3{
-    text-align: center;
-  }
-  .titleEmph {
-    font-size: 28px;
-  }
-
-  /*.section-bg {
-    -webkit-background-size: 100% !important; 
-    -moz-background-size: 100% !important; 
-    -o-background-size: 100% !important; 
-    background-size: 100% !important;
-  }
-  #bg-home {
-    background: url(../assets/01.jpg) no-repeat top center fixed;
-  }*/
-}
-
 .row-about,
 .row-projects,
 .row-connect {
@@ -197,6 +179,21 @@ a .fa {
   border-radius: 0px;
   background-color: #FF5800;
   color: #FFF;
+}
+
+.btn-project-container {
+  text-align: center;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  -ms-transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+  transform: translate(-50%);
+}
+
+.btn-project, .btn-project:hover {
+  border-radius: 0px;
+  background-color: #E6E6E6;
 }
 
 .btn-submit {
@@ -364,4 +361,31 @@ a[rel="modal:close"] {
 
 .container .text-muted{
   margin: 20px 20px;
+}
+
+@media only screen and (max-width: 991px) {
+  .btn-project-container {
+    top: 45%;
+  }
+}
+
+@media only screen and (max-width: 562px) {
+  #title-row-1,
+  #title-row-2,
+  #title-row-3{
+    text-align: center;
+  }
+  .titleEmph {
+    font-size: 28px;
+  }
+
+  /*.section-bg {
+    -webkit-background-size: 100% !important; 
+    -moz-background-size: 100% !important; 
+    -o-background-size: 100% !important; 
+    background-size: 100% !important;
+  }
+  #bg-home {
+    background: url(../assets/01.jpg) no-repeat top center fixed;
+  }*/
 }

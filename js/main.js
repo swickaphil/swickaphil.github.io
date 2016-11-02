@@ -9,24 +9,11 @@ $( document ).ready(function() {
     selectAll = function(s) {
       return document.querySelectorAll(s);
     },
-    /*title1 = select("#title-row-1"),
-    title2 = select("#title-row-2"),
-    title3 = select("#title-row-3"),*/
     titleEmph = selectAll(".titleEmph"),
     titleCopy = selectAll(".titleCopy")
 
-  // TweenMax.staggerFromTo(selectAll("#title-row-1 span"), .5, {x:'50', opacity:0}, {x:'0', opacity:1}, 0.5)
-  // TweenMax.staggerFromTo(selectAll("#title-row-2 span"), .5, {x:'50', opacity:0}, {x:'0', opacity:1, delay:1.5}, 0.5)
-  // TweenMax.staggerFromTo(selectAll("#title-row-3 span"), .5, {x:'50', opacity:0}, {x:'0', opacity:1, delay:2.5}, 0.5)
-
-  TweenMax.staggerFromTo(titleEmph, .5, {x:'50', opacity:0}, {x:'0', opacity:1, delay:1}, 0.5)
-  TweenMax.fromTo(titleCopy, .5, {y:'5', opacity:0}, {y:'0', opacity:1, delay:2.5}, 1.5)
-
-  // var tl = new TimelineLite({delay:1});
-  // tl
-  //   .add(TweenMax.staggerFromTo(selectAll("#title-row-1 span"), .5, {x:'50', opacity:0}, {x:'0', opacity:1}, 0.5))
-  //   .add(TweenMax.staggerFromTo(selectAll("#title-row-2 span"), .5, {x:'50', opacity:0}, {x:'0', opacity:1}, 0.5))
-  //   .add(TweenMax.staggerFromTo(selectAll("#title-row-3 span"), .5, {x:'50', opacity:0}, {x:'0', opacity:1}, 0.5))
+  TweenMax.staggerFromTo(titleEmph, .5, {x:'50', opacity:0}, {x:'0', opacity:1, delay:.75}, 0.5)
+  TweenMax.fromTo(titleCopy, .5, {y:'5', opacity:0}, {y:'0', opacity:1, delay:2.25}, 1.5)
 
   // PROJECTS //
   var projectList = [];
@@ -45,7 +32,10 @@ $( document ).ready(function() {
             injectString += '<div class="row row-projects">'
           }
           injectString += '<div id="' + i + '" class="col-md-3 project">'
-          + '<div class="img-responsive project-overlay">'
+          + '<div class="project-overlay">&nbsp;'
+            + '<div class="btn-project-container">'
+              + "<a href='#connect' class='btn btn-default btn-lg btn-project'>View Project</a>"
+            + '</div>'
           + '</div>'
           + '<img src="' + projectList[i].thumb + '" class="img-responsive" alt="' + projectList[i].title + ' project">'
           + '<h4>' + projectList[i].title + '</h4>'
@@ -65,9 +55,11 @@ $( document ).ready(function() {
         $(".project").on("click", projectClick);
 
         $(".project").hover(function(e){
-          $(e.currentTarget).addClass("project-hover");
+          TweenMax.to($(e.currentTarget).children(".project-overlay"), .25, {opacity:1}, {opacity:0});
+          TweenMax.fromTo($(e.currentTarget).children(".project-overlay").children("div.btn-project-container"), .25, {y:'-5'}, {y:'0'});
         }, function(e){
-          $(e.currentTarget).removeClass("project-hover");
+          TweenMax.to($(e.currentTarget).children(".project-overlay"), .1, {opacity:0});
+          TweenMax.to($(e.currentTarget).children(".project-overlay").children("div.btn-project-container"), .1, {y:'-5'});
         });
       }
     }               
