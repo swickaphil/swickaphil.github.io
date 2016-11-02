@@ -112,6 +112,7 @@ a .fa {
   margin: auto;
 }
 
+
 #title-row-1 {
   text-align: left;
 }
@@ -128,6 +129,11 @@ a .fa {
   font-size: 48px;
   font-weight: bold;
   color: #FF5800;
+}
+
+.titleRow span{
+  opacity: 0;
+  display:inline-block;
 }
 
 @media only screen and (max-width: 562px) {

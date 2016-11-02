@@ -1,6 +1,33 @@
 
 $( document ).ready(function() {
 
+  // INTRO //
+  var xmlns = "http://www.w3.org/2000/svg",
+    select = function(s) {
+      return document.querySelector(s);
+    },
+    selectAll = function(s) {
+      return document.querySelectorAll(s);
+    },
+    /*title1 = select("#title-row-1"),
+    title2 = select("#title-row-2"),
+    title3 = select("#title-row-3"),*/
+    titleEmph = selectAll(".titleEmph"),
+    titleCopy = selectAll(".titleCopy")
+
+  // TweenMax.staggerFromTo(selectAll("#title-row-1 span"), .5, {x:'50', opacity:0}, {x:'0', opacity:1}, 0.5)
+  // TweenMax.staggerFromTo(selectAll("#title-row-2 span"), .5, {x:'50', opacity:0}, {x:'0', opacity:1, delay:1.5}, 0.5)
+  // TweenMax.staggerFromTo(selectAll("#title-row-3 span"), .5, {x:'50', opacity:0}, {x:'0', opacity:1, delay:2.5}, 0.5)
+
+  TweenMax.staggerFromTo(titleEmph, .5, {x:'50', opacity:0}, {x:'0', opacity:1}, 0.5)
+  TweenMax.fromTo(titleCopy, .5, {y:'5', opacity:0}, {y:'0', opacity:1, delay:1.5}, 0.5)
+
+  // var tl = new TimelineLite({delay:1});
+  // tl
+  //   .add(TweenMax.staggerFromTo(selectAll("#title-row-1 span"), .5, {x:'50', opacity:0}, {x:'0', opacity:1}, 0.5))
+  //   .add(TweenMax.staggerFromTo(selectAll("#title-row-2 span"), .5, {x:'50', opacity:0}, {x:'0', opacity:1}, 0.5))
+  //   .add(TweenMax.staggerFromTo(selectAll("#title-row-3 span"), .5, {x:'50', opacity:0}, {x:'0', opacity:1}, 0.5))
+
   // PROJECTS //
   var projectList = [];
 
