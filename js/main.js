@@ -19,8 +19,8 @@ $( document ).ready(function() {
   // TweenMax.staggerFromTo(selectAll("#title-row-2 span"), .5, {x:'50', opacity:0}, {x:'0', opacity:1, delay:1.5}, 0.5)
   // TweenMax.staggerFromTo(selectAll("#title-row-3 span"), .5, {x:'50', opacity:0}, {x:'0', opacity:1, delay:2.5}, 0.5)
 
-  TweenMax.staggerFromTo(titleEmph, .5, {x:'50', opacity:0}, {x:'0', opacity:1}, 0.5)
-  TweenMax.fromTo(titleCopy, .5, {y:'5', opacity:0}, {y:'0', opacity:1, delay:1.5}, 0.5)
+  TweenMax.staggerFromTo(titleEmph, .5, {x:'50', opacity:0}, {x:'0', opacity:1, delay:1}, 0.5)
+  TweenMax.fromTo(titleCopy, .5, {y:'5', opacity:0}, {y:'0', opacity:1, delay:2.5}, 1.5)
 
   // var tl = new TimelineLite({delay:1});
   // tl
