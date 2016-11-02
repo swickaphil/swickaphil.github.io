@@ -53,6 +53,7 @@ $( document ).ready(function() {
         $('.container-projects').append(injectString);
 
         $(".project").on("click", projectClick);
+        $(".project").bind( "touchstart", projectClick);
 
         $(".project").hover(function(e){
           TweenMax.to($(e.currentTarget).children(".project-overlay"), .25, {opacity:1}, {opacity:0});
