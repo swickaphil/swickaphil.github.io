@@ -34,7 +34,7 @@ $( document ).ready(function() {
           injectString += '<div id="' + i + '" class="col-md-3 project">'
           + '<div class="project-overlay">&nbsp;'
             + '<div class="btn-project-container">'
-              + "<a href='#connect' class='btn btn-default btn-lg btn-project'>View Project</a>"
+              + "<a href='#' class='btn btn-default btn-lg btn-project'>View Project</a>"
             + '</div>'
           + '</div>'
           + '<img src="' + projectList[i].thumb + '" class="img-responsive" alt="' + projectList[i].title + ' project">'
