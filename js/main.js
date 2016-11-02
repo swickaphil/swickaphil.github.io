@@ -34,7 +34,7 @@ $( document ).ready(function() {
           injectString += '<div id="' + i + '" class="col-md-3 project">'
           + '<div class="project-overlay">&nbsp;'
             + '<div class="btn-project-container">'
-              + "<a href='#' class='btn btn-default btn-lg btn-project'>View Project</a>"
+              + "<a class='btn btn-default btn-lg btn-project'>View Project</a>"
             + '</div>'
           + '</div>'
           + '<img src="' + projectList[i].thumb + '" class="img-responsive" alt="' + projectList[i].title + ' project">'
@@ -53,10 +53,10 @@ $( document ).ready(function() {
         $('.container-projects').append(injectString);
 
         $(".project").on("click", projectClick);
-        $(".project").bind( "touchstart", projectClick);
+        $(".project").on( "touchstart", projectClick);
 
         $(".project").hover(function(e){
-          TweenMax.to($(e.currentTarget).children(".project-overlay"), .25, {opacity:1}, {opacity:0});
+          TweenMax.to($(e.currentTarget).children(".project-overlay"), .25, {'opacity':1}, {opacity:0});
           TweenMax.fromTo($(e.currentTarget).children(".project-overlay").children("div.btn-project-container"), .25, {y:'-5'}, {y:'0'});
         }, function(e){
           TweenMax.to($(e.currentTarget).children(".project-overlay"), .1, {opacity:0});
@@ -67,8 +67,9 @@ $( document ).ready(function() {
   });
 
   function projectClick(e){
-    $(".project-overlay").css(opacity, 0);
-    window.location.href = "project.html?details=" + encodeURIComponent(projectDataString);
+    $(".project-overlay").css('opacity', '0');
+    var projectDataString = JSON.stringify(projectList[e.currentTarget.id]);
+    document.location.href = "project.html?details=" + encodeURIComponent(projectDataString);
   }
 
   // FORM //
