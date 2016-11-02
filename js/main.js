@@ -66,7 +66,7 @@ $( document ).ready(function() {
   });
 
   function projectClick(e){
-    var projectDataString = JSON.stringify(projectList[e.currentTarget.id]);
+    $(".project-overlay").css(opacity, 0);
     window.location.href = "project.html?details=" + encodeURIComponent(projectDataString);
   }
 
