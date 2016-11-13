@@ -24,7 +24,7 @@
           "caption":"PATTERN LIBRARY"
         }
       ],
-      "thumb":"./assets/project-email-02.jpg",
+      "thumb":"./assets/project-email-05.jpg",
       "images":["./assets/project-email-02.jpg","./assets/project-email-01.jpg","./assets/project-email-04.jpg","./assets/project-email-05.jpg","./assets/project-email-06.jpg"],
       "summary":"A front-end pattern library created for the simple assembly of responsive, company branded emails.  Emails are assembled by populating a foundational template with modular components in order to be assembled rather than coding each time from scratch.  Assembly system is used to create emails in .msg format which is then attached and sent to employers and/or brokers in order to send from internal ESP's.  Code snippets are pulled from a custom, external API and are hosted in a central repository, which is generated and updated independently from the front-end.",
       "roles":["Product Management", "Technical Direction", "Art Direction", "Architecture", "User Experience", "Back-End Development"],
@@ -43,7 +43,7 @@
           "caption":"CODE"
         }
       ],
-      "thumb":"./assets/project-joyduino-03.jpg",
+      "thumb":"./assets/project-joyduino-01.jpg",
       "images":["./assets/project-joyduino-03.jpg", "./assets/project-joyduino-01.jpg", "./assets/project-joyduino-02.jpg"],
       "summary":"A personal project in which I assembled LEDs within paper mache letters displaying the word JOY.  The LEDs were powered and animated by an Arduino Uno using the FastLED open source library.",
       "roles":["Concept", "Design", "Development"],
@@ -54,10 +54,10 @@
       "subtitle":"Brand identity and digital marketing material development for Anthem's internal innovation lab.",
       "links":[
       ],
-      "thumb":"./assets/project-innovation-04.jpg",
+      "thumb":"./assets/project-innovation-03.jpg",
       "images":["./assets/project-innovation-04.jpg", "./assets/project-innovation-03.jpg", "./assets/project-innovation-02.jpg", "./assets/project-innovation-01.jpg"],
       "summary":"Through this project, I led a team of art directors and writers and to create the brand identity and microsite concept for Anthem's internal innovation lab.  This project shaped the visual identity of the entire studio, including the environmental design for the studio itself.",
-      "roles":["Creative Direction", "Project Management", "Client Relations"],
+      "roles":["Art Direction", "Project Management", "Client Relations"],
       "tech":["Adobe InDesign", "Adobe Photoshop", "Adobe Illustrator"]
     },
     {
@@ -87,7 +87,7 @@
       "thumb":"./assets/project-sizzle-01.png",
       "images":["./assets/project-sizzle-01.png", "./assets/project-sizzle-02.jpg", "./assets/project-sizzle-03.jpg", "./assets/project-sizzle-04.jpg", "./assets/project-sizzle-05.jpg", "./assets/project-sizzle-06.jpg"],
       "summary":"A quickly assembled sizzle reel in order to showcase department accomplishments to executive management for mid year review.",
-      "roles":["Project Manager", "Designer", "Editor", "Animator"],
+      "roles":["Project Management", "Art Direction", "Video Editing", "Animation"],
       "tech":["Adobe Premiere", "Adobe AfterEffects", "Adobe Photoshop", "Adobe Illustrator", "Brightcove"]
     },
     {
